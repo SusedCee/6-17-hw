@@ -1,2 +1,472 @@
-Question #1 
-I closed terminal before copying my steps
+Suseds-MacBook-Pro:homework susedcabrera$ cd ~
+Suseds-MacBook-Pro:~ susedcabrera$ ls
+Applications		Library			Postman
+Desktop			Movies			Public
+Documents		Music			fundamentals
+Downloads		Pictures		sei_autumn_sweaters
+Suseds-MacBook-Pro:~ susedcabrera$ mkdir galaxy-far-far-away
+Suseds-MacBook-Pro:~ susedcabrera$ cd galaxy-far-far-away/
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mkdir death_star
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd death_star/
+Suseds-MacBook-Pro:death_star susedcabrera$ touch darth_vader.txt
+Suseds-MacBook-Pro:death_star susedcabrera$ touch princess_leia.txt
+Suseds-MacBook-Pro:death_star susedcabrera$ touch storm_trooper.txt
+Suseds-MacBook-Pro:death_star susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ touch commands.txt
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mkdir tatooine
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd tatooine/
+Suseds-MacBook-Pro:tatooine susedcabrera$ touch luke.txt
+Suseds-MacBook-Pro:tatooine susedcabrera$ touch ben_kenobi.txt
+Suseds-MacBook-Pro:tatooine susedcabrera$ mkdir millenium_falcon
+Suseds-MacBook-Pro:tatooine susedcabrera$ cd millenium_falcon/
+Suseds-MacBook-Pro:millenium_falcon susedcabrera$ touch han_solo.txt
+Suseds-MacBook-Pro:millenium_falcon susedcabrera$ touch chewbaca.txt
+Suseds-MacBook-Pro:millenium_falcon susedcabrera$ cd ..
+Suseds-MacBook-Pro:tatooine susedcabrera$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+Suseds-MacBook-Pro:tatooine susedcabrera$ mv ben_kenobi.txt obi_wan.txt
+Suseds-MacBook-Pro:tatooine susedcabrera$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Suseds-MacBook-Pro:tatooine susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tatooine
+    ├── luke.txt
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   └── han_solo.txt
+    └── obi_wan.txt
+
+3 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd death_star/
+Suseds-MacBook-Pro:death_star susedcabrera$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Suseds-MacBook-Pro:death_star susedcabrera$ pwd
+/Users/susedcabrera/galaxy-far-far-away/death_star
+Suseds-MacBook-Pro:death_star susedcabrera$ cp /Users/susedcabrera/galaxy-far-far-away/death_star/storm_trooper.txt /Users/susedcabrera/galaxy-far-far-away/tatooine
+Suseds-MacBook-Pro:death_star susedcabrera$ tree
+.
+├── darth_vader.txt
+├── princess_leia.txt
+└── storm_trooper.txt
+
+0 directories, 3 files
+Suseds-MacBook-Pro:death_star susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tatooine
+    ├── luke.txt
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   └── han_solo.txt
+    ├── obi_wan.txt
+    └── storm_trooper.txt
+
+3 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/tatooine/luke.txt /Users/susedcabrera/galaxy-far-far-away/tatooine/millenium_falcon
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tatooine
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   └── luke.txt
+    ├── obi_wan.txt
+    └── storm_trooper.txt
+
+3 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/tatooine/millenium_falcon /Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   ├── han_solo.txt
+│   └── luke.txt
+└── tatooine
+    ├── obi_wan.txt
+    └── storm_trooper.txt
+
+3 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/millenium_falcon /Users/susedcabrera/galaxy-far-far-away/death_star
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── millenium_falcon
+│   │   ├── chewbaca.txt
+│   │   ├── han_solo.txt
+│   │   └── luke.txt
+│   ├── princess_leia.txt
+│   └── storm_trooper.txt
+└── tatooine
+    ├── obi_wan.txt
+    └── storm_trooper.txt
+
+3 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/princess_leia.txt /Users/susedcabrera/galaxy-far-far-away/death_star/millenium_falcon
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── millenium_falcon
+│   │   ├── chewbaca.txt
+│   │   ├── han_solo.txt
+│   │   ├── luke.txt
+│   │   └── princess_leia.txt
+│   └── storm_trooper.txt
+└── tatooine
+    ├── obi_wan.txt
+    └── storm_trooper.txt
+
+3 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd tatooine
+Suseds-MacBook-Pro:tatooine susedcabrera$ rm obi_wan.txt 
+Suseds-MacBook-Pro:tatooine susedcabrera$ tree
+.
+└── storm_trooper.txt
+
+0 directories, 1 file
+Suseds-MacBook-Pro:tatooine susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── millenium_falcon
+│   │   ├── chewbaca.txt
+│   │   ├── han_solo.txt
+│   │   ├── luke.txt
+│   │   └── princess_leia.txt
+│   └── storm_trooper.txt
+└── tatooine
+    └── storm_trooper.txt
+
+3 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mkdir yavin_4
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/millenium_falcon /Users/susedcabrera/galaxy-far-far-away/yavin_4
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+├── tatooine
+│   └── storm_trooper.txt
+└── yavin_4
+    └── millenium_falcon
+        ├── chewbaca.txt
+        ├── han_solo.txt
+        ├── luke.txt
+        └── princess_leia.txt
+
+4 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd yavin_4/
+Suseds-MacBook-Pro:yavin_4 susedcabrera$ mkdir x_wing
+Suseds-MacBook-Pro:yavin_4 susedcabrera$ cd millenium_falcon/
+Suseds-MacBook-Pro:millenium_falcon susedcabrera$ pwd
+/Users/susedcabrera/galaxy-far-far-away/yavin_4/millenium_falcon
+Suseds-MacBook-Pro:millenium_falcon susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/yavin_4/millenium_falcon/princess_leia.txt /Users/susedcabrera/galaxy-far-far-away/yavin_4
+Suseds-MacBook-Pro:millenium_falcon susedcabrera$ cd ..
+Suseds-MacBook-Pro:yavin_4 susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+├── tatooine
+│   └── storm_trooper.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   ├── han_solo.txt
+    │   └── luke.txt
+    ├── princess_leia.txt
+    └── x_wing
+
+5 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/yavin_4/millenium_falcon/luke.txt 
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/yavin_4/millenium_falcon/luke.txt mv /Users/susedcabrera/galaxy-far-far-away/yavin_4/x_wing
+mv: rename mv to /Users/susedcabrera/galaxy-far-far-away/yavin_4/x_wing/mv: No such file or directory
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+├── tatooine
+│   └── storm_trooper.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   └── han_solo.txt
+    ├── princess_leia.txt
+    └── x_wing
+        └── luke.txt
+
+5 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/yavin_4/millenium_falcon/ /Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+└── yavin_4
+    ├── princess_leia.txt
+    └── x_wing
+        └── luke.txt
+
+5 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/yavin_4/x_wing /Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+5 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd death_star/
+Suseds-MacBook-Pro:death_star susedcabrera$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Suseds-MacBook-Pro:death_star susedcabrera$ tree
+.
+├── darth_vader.txt
+├── storm_trooper.txt
+├── tie_fighter_1
+├── tie_fighter_2
+└── tie_fighter_3
+
+3 directories, 2 files
+Suseds-MacBook-Pro:death_star susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── darth_vader.txt
+│   ├── storm_trooper.txt
+│   ├── tie_fighter_1
+│   ├── tie_fighter_2
+│   └── tie_fighter_3
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+8 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/darth_vader.txt /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter_1
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── storm_trooper.txt
+│   ├── tie_fighter_1
+│   │   └── darth_vader.txt
+│   ├── tie_fighter_2
+│   └── tie_fighter_3
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+8 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cp /Users/susedcabrera/galaxy-far-far-away/death_star/storm_trooper.txt /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter_2
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── storm_trooper.txt
+│   ├── tie_fighter_1
+│   │   └── darth_vader.txt
+│   ├── tie_fighter_2
+│   │   └── storm_trooper.txt
+│   └── tie_fighter_3
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+8 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cp /Users/susedcabrera/galaxy-far-far-away/death_star/storm_trooper.txt /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter_3
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   ├── storm_trooper.txt
+│   ├── tie_fighter_1
+│   │   └── darth_vader.txt
+│   ├── tie_fighter_2
+│   │   └── storm_trooper.txt
+│   └── tie_fighter_3
+│       └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+8 directories, 10 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter_1 /Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter2 /Users/susedcabrera/galaxy-far-far-away
+mv: rename /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter2 to /Users/susedcabrera/galaxy-far-far-away/tie_fighter2: No such file or directory
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter_2 /Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/death_star/tie_fighter_3 /Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── tie_fighter_2
+│   └── storm_trooper.txt
+├── tie_fighter_3
+│   └── storm_trooper.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+8 directories, 10 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ rm -r tie_fighter_2
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ rm -r tie_fighter_3
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── x_wing
+│   └── luke.txt
+└── yavin_4
+    └── princess_leia.txt
+
+6 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ cd x_wing/
+Suseds-MacBook-Pro:x_wing susedcabrera$ touch the_force.txt
+Suseds-MacBook-Pro:x_wing susedcabrera$ cd ..
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── death_star
+│   └── storm_trooper.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+├── x_wing
+│   ├── luke.txt
+│   └── the_force.txt
+└── yavin_4
+    └── princess_leia.txt
+
+6 directories, 9 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ rm -r death_star/
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ pwd
+/Users/susedcabrera/galaxy-far-far-away
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/x_wing /Users/susedcabrera/galaxy-far-far-away/yavin_4
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── millenium_falcon
+│   ├── chewbaca.txt
+│   └── han_solo.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+└── yavin_4
+    ├── princess_leia.txt
+    └── x_wing
+        ├── luke.txt
+        └── the_force.txt
+
+5 directories, 8 files
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ mv /Users/susedcabrera/galaxy-far-far-away/millenium_falcon /Users/susedcabrera/galaxy-far-far-away/yavin_4
+Suseds-MacBook-Pro:galaxy-far-far-away susedcabrera$ tree
+.
+├── commands.txt
+├── tatooine
+│   └── storm_trooper.txt
+├── tie_fighter_1
+│   └── darth_vader.txt
+└── yavin_4
+    ├── millenium_falcon
+    │   ├── chewbaca.txt
+    │   └── han_solo.txt
+    ├── princess_leia.txt
+    └── x_wing
+        ├── luke.txt
+        └── the_force.txt
+
